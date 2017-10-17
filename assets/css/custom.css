@@ -1,0 +1,157 @@
+.promo-img{
+	width: 30%;
+	display: inline-block;
+}
+.promo-img img{
+	width: 100%;
+}
+.rule-list{
+	margin-bottom: 15px;
+}
+.rule-list li{
+	font-size: 16px;
+    list-style: disc;
+    margin-left: 25px;
+}
+#map_container{
+  position: relative;
+}
+#map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.floor-img{
+	margin-bottom: 15px;
+}
+.floor-img img{
+    border-radius: 5px;
+}
+.img-test img {
+    width: 100%;
+}
+
+/* Loading Animate*/
+.loadBar {
+    background: #A3D756;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+.loadLogo{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -33px;
+}
+
+.soi-logo{
+    width: 150px;
+}
+.spinner {
+    -webkit-animation: rotator 1.4s linear infinite;
+    animation: rotator 1.4s linear infinite;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -33px;
+    margin-left: -33px;
+}
+.fbLink{
+    width: 50px;
+    height: 30px;
+}
+@media only screen and (max-width: 992px){
+    .rule-list li {
+    list-style: none;
+}
+}
+@-webkit-keyframes rotator {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes rotator {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+.path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    stroke: rgba(255, 255, 255, .5);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+     -webkit-animation: dash 1.4s ease-in-out infinite;
+    animation: dash 1.4s ease-in-out infinite;
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
